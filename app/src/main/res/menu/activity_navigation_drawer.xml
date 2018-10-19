@@ -7,15 +7,15 @@
         <item
             android:id="@+id/nav_main"
             android:icon="@android:drawable/ic_dialog_dialer"
-            android:title="Home" />
+            android:title="Main" />
         <item
             android:id="@+id/nav_activity_1"
             android:icon="@android:drawable/ic_dialog_info"
-            android:title="Activity 1" />
+            android:title="First Activity" />
         <item
             android:id="@+id/nav_activity_2"
             android:icon="@android:drawable/ic_dialog_info"
-            android:title="Activity 2" />
+            android:title="Second Activity" />
     </group>
 
     <item android:title="Communicate">
@@ -23,7 +23,7 @@
             <item
                 android:id="@+id/nav_activity_3"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Activity 3" />
+                android:title="Third Activity" />
         </menu>
     </item>
 

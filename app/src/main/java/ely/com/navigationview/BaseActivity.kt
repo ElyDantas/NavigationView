@@ -51,8 +51,8 @@ open class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
                 Handler().postDelayed({
                     Runnable {
 
-                        if (activityType != "NavigationActivity") {
-                            startActivity<NavigationActivity>()
+                        if (activityType != "MainActivity") {
+                            startActivity<MainActivity>()
                             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
                             finish()
                         }
@@ -64,8 +64,36 @@ open class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
                 Handler().postDelayed({
                     Runnable {
 
-                        if (activityType != "Activity1") {
-                            startActivity<NavigationActivity>()
+                        if (activityType != "FirstActivity") {
+                            startActivity<FirstActivity>()
+                            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                            finish()
+                        }
+
+                    }.run()
+                }, 300)
+            }
+
+            R.id.nav_activity_2 -> {
+                Handler().postDelayed({
+                    Runnable {
+
+                        if (activityType != "SecondActivity") {
+                            startActivity<SecondActivity>()
+                            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                            finish()
+                        }
+
+                    }.run()
+                }, 300)
+            }
+
+            R.id.nav_activity_3 -> {
+                Handler().postDelayed({
+                    Runnable {
+
+                        if (activityType != "ThirdActivity") {
+                            startActivity<ThirdActivity>()
                             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
                             finish()
                         }
